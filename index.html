@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="clock-container">
+        <h2 class="clock-label">Hora no Reino Unido:</h2>
+        <div class="clock" id="uk-clock">00:00:00</div>
+    </div>
+    <div class="clock-container">
+        <h2 class="clock-label">Hora na Turquia:</h2>
+        <div class="clock" id="turkey-clock">00:00:00</div>
+    </div>
+
+    <div class="timer-container">
+        <h1 class="timer" id="timer">25:00</h1>
+        <div class="buttons">
+            <button id="start">Iniciar</button>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </div>
+
+    <div class="task-container">
+        <h2>Tarefas Diárias:</h2>
+        <input type="text" id="task-input" placeholder="Adicionar tarefa">
+        <button id="add-task">Adicionar</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <div class="favorites-container">
+        <h2>Sites Favoritos:</h2>
+        <ul id="favorites-list"></ul>
+        <div class="add-favorite">
+            <input type="text" id="favorite-input" placeholder="URL do site">
+            <button id="save-favorite">Salvar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
